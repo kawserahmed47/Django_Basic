@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>Hello, Tania... Miss you.. What are you doing? </h2>
+<div>
+
+    <p>Name : {{ name }}  </p>
+    <p>Country: {{ country }}</p> 
+    <p>
+    {% for num in lists %}
+    <h{{ num }}> This is heading {{ num }} </h{{ num }}>
+    {% endfor %}
+
+</p>
+</div>
+{%  endblock %}
